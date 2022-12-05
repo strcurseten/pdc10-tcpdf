@@ -1,15 +1,13 @@
 <?php
+
 require "vendor/autoload.php";
 
 class MYPDF extends TCPDF
 {
 function Header()
 {
-    $image = K_PATH_IMAGES.'auf-logo.jpg';
-    $this->Image($image, 10, 10, 15, '', 'JPG', '', 'T', false, 300, '', false, false, 0, false, false, false);
     $this->SetFont('Times', 'B', 20);
     $this->Ln(15);
-    $this->Cell(0, 15, 'Brief History of Angeles University Foundation', 0, false, 'C', 0, '', 0, false, 'M', 'M');
     
 }
 
