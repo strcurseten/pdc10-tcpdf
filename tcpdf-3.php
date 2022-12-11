@@ -21,9 +21,9 @@ function Footer()
 
 $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
-$CH01 = file_get_contents('vendor/tecnickcom/tcpdf/examples/data/CH-01.txt', false);
-$CH02 = file_get_contents('vendor/tecnickcom/tcpdf/examples/data/CH-02.txt', false);
-$CH03 = file_get_contents('vendor/tecnickcom/tcpdf/examples/data/CH-03.txt', false);
+$CH01 = file_get_contents('vendor/tecnickcom/tcpdf/examples/data/CH_01.txt', false);
+$CH02 = file_get_contents('vendor/tecnickcom/tcpdf/examples/data/CH_02.txt', false);
+$CH03 = file_get_contents('vendor/tecnickcom/tcpdf/examples/data/CH_03.txt', false);
 
 $pdf->SetFont('times', '', 12);
 $pdf->AddPage();
